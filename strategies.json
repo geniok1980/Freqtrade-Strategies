@@ -1,0 +1,86 @@
+{
+  "strategies": [
+    {
+      "name": "SmartScalpAI",
+      "description": "Интеллектуальный скальпинг с ML-предсказанием импульсов. Использует градиентный бустинг для фильтрации ложных входов.",
+      "timeframe": "1m, 5m",
+      "pairs": "BTC/USDT, ETH/USDT, SOL/USDT",
+      "type": "Scalping",
+      "ml": true,
+      "status": "production"
+    },
+    {
+      "name": "GridML",
+      "description": "Адаптивная сетка с ML-корректировкой уровней. Динамически подстраивает сетку ордеров под волатильность на основе LSTM.",
+      "timeframe": "15m, 1h",
+      "pairs": "BTC/USDT, ETH/USDT",
+      "type": "Grid",
+      "ml": true,
+      "status": "production"
+    },
+    {
+      "name": "MomentumFusion",
+      "description": "Мульти-таймфрейм стратегия на основе моментума. Комбинирует сигналы с 1m, 5m, 15m для подтверждения тренда.",
+      "timeframe": "1m, 5m, 15m",
+      "pairs": "BTC/USDT, ETH/USDT, BNB/USDT",
+      "type": "Momentum",
+      "ml": false,
+      "status": "production"
+    },
+    {
+      "name": "MeanReversionPro",
+      "description": "Mean reversion с адаптивными полосами Боллинджера и ML-фильтром ложных пробоев.",
+      "timeframe": "5m, 15m",
+      "pairs": "ETH/USDT, SOL/USDT, MATIC/USDT",
+      "type": "Mean Reversion",
+      "ml": true,
+      "status": "beta"
+    },
+    {
+      "name": "TrendCatcher",
+      "description": "Стратегия следования за трендом с AI-определением силы движения. Использует кластеризацию режимов рынка.",
+      "timeframe": "1h, 4h",
+      "pairs": "BTC/USDT, ETH/USDT",
+      "type": "Trend Following",
+      "ml": true,
+      "status": "beta"
+    },
+    {
+      "name": "PairTradeAI",
+      "description": "Парный трейдинг с AI-отбором коррелированных пар и статистическим арбитражем.",
+      "timeframe": "15m, 1h",
+      "pairs": "ETH/BTC, SOL/ETH, MATIC/SOL",
+      "type": "Pairs",
+      "ml": true,
+      "status": "alpha"
+    },
+    {
+      "name": "RSIDivergence",
+      "description": "Классическая RSI-дивергенция с усилением через объёмный анализ и ML-верификацию паттернов.",
+      "timeframe": "5m, 15m, 1h",
+      "pairs": "BTC/USDT, ETH/USDT, SOL/USDT, AVAX/USDT",
+      "type": "Divergence",
+      "ml": false,
+      "status": "production"
+    },
+    {
+      "name": "VolumeSpikeHunter",
+      "description": "Охота за объёмными всплесками. Срабатывает на аномальные всплески объёма с ML-подтверждением направления.",
+      "timeframe": "1m, 5m",
+      "pairs": "BTC/USDT, ETH/USDT",
+      "type": "Volume",
+      "ml": true,
+      "status": "beta"
+    },
+    {
+      "name": "SuperTrendAI",
+      "description": "SuperTrend с AI-оптимизацией параметров под режим рынка. Динамически меняет ATR-множитель.",
+      "timeframe": "15m, 1h, 4h",
+      "pairs": "BTC/USDT, ETH/USDT, SOL/USDT",
+      "type": "Trend Following",
+      "ml": true,
+      "status": "alpha"
+    }
+  ],
+  "updated": "2026-05-28"
+}
